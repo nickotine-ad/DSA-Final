@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "inventory-system",
+            "includePath": ["${workspaceFolder}/src"],
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build inventory (all files)",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-I${workspaceFolder}/src",
+                "${workspaceFolder}/src/main.cpp",
+                "${workspaceFolder}/src/Menu.cpp",
+                "${workspaceFolder}/src/common/Display.cpp",
+                "${workspaceFolder}/src/lab1_dynamic_array/Catalog.cpp",
+                "${workspaceFolder}/src/lab2_doubly_linked_list/Cart.cpp",
+                "${workspaceFolder}/src/lab3_circular_list/BrandShowcase.cpp",
+                "${workspaceFolder}/src/lab4_stack/UndoStack.cpp",
+                "${workspaceFolder}/src/lab5_queue/OrderQueue.cpp",
+                "${workspaceFolder}/src/lab6_bst/ProductTree.cpp",
+                "${workspaceFolder}/src/lab7_searching/Search.cpp",
+                "${workspaceFolder}/src/lab8_sorting/Sorting.cpp",
+                "-o",
+                "${workspaceFolder}/inventory.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
